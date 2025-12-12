@@ -28,7 +28,7 @@ def preprocess(img):
 st.title("Clasificador de objetos")
 uploaded_file = st.file_uploader("Elige una imagen", type=["jpg", "jpeg", "png"])
 
- if uploaded_file is not None:
+if uploaded_file is not None:
     # 1. Cargar y mostrar imagen
     img = Image.open(uploaded_file)
     st.image(img, caption="Imagen cargada", width=300)
@@ -53,6 +53,7 @@ uploaded_file = st.file_uploader("Elige una imagen", type=["jpg", "jpeg", "png"]
 
 #cd "C:\Users\Usuario\OneDrive\Desktop\Universidad\Noveno semestre\IA"
 #streamlit run pagweb.py
+
 
 
 
