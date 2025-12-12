@@ -25,9 +25,13 @@ CLASSES = ["Calculadora", "billetes","llaves" ]
 # 3. Preprocesamiento EfficientNetB0
 # ------------------------------
 def preprocess(img):
-    img = img.resize((224, 224))  # tamaño estándar EfficientNetB0
+    if img.mode != "RGB":
+        img = img.convert("RGB")
+    
+    img = img.resize((224, 224))
     img = np.array(img)
-    img = preprocess_input(img)   # normalización CORRECTA
+    img = preprocess_input(img) 
+    
     img = np.expand_dims(img, axis=0)
     return img
 
@@ -61,5 +65,6 @@ if uploaded_file is not None:
 
 #cd "C:\Users\Usuario\OneDrive\Desktop\Universidad\Noveno semestre\IA"
 #streamlit run pagweb.py
+
 
 
