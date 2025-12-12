@@ -19,7 +19,7 @@ model = load_model()
 # ------------------------------
 # 2. Clases
 # ------------------------------
-CLASSES = ["Calculadora", "billetes","llaves" ]
+CLASSES = ["billetes", "Calculadora","llaves" ]
 
 # ------------------------------
 # 3. Preprocesamiento EfficientNetB0
@@ -61,3 +61,4 @@ if uploaded_file is not None:
 
 #cd "C:\Users\Usuario\OneDrive\Desktop\Universidad\Noveno semestre\IA"
 #streamlit run pagweb.py
+
