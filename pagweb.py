@@ -26,6 +26,7 @@ def preprocess(img):
     return img
     
 st.title("Clasificador de objetos")
+st.subtitle("Los objetos a predecir son: Billetes, Llaves (pueden ser de auto o de cualquier tipo) y calculadoras")
 uploaded_file = st.file_uploader("Elige una imagen", type=["jpg", "jpeg", "png"])
 
 if uploaded_file is not None:
@@ -52,6 +53,7 @@ if uploaded_file is not None:
 
 #cd "C:\Users\Usuario\OneDrive\Desktop\Universidad\Noveno semestre\IA"
 #streamlit run pagweb.py
+
 
 
 
