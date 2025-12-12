@@ -13,7 +13,7 @@ def load_model():
 
 model = load_model()
 
-CLASSES = ["Calculadora", "billetes", "llaves"] 
+CLASSES = ["Licecia", "billetes", "llaves"] 
 
 def preprocess(img):
     
@@ -50,6 +50,7 @@ if uploaded_file is not None:
 
 #cd "C:\Users\Usuario\OneDrive\Desktop\Universidad\Noveno semestre\IA"
 #streamlit run pagweb.py
+
 
 
 
