@@ -52,10 +52,14 @@ if uploaded_file is not None:
     input_img = preprocess(img)
 
     # Predicción
-    preds = model.predict(input_img)
-    class_id = np.argmax(preds)
-    confidence = float(np.max(preds))
+raw_preds = model(input_img, training=False) 
 
+# Convertir el tensor de salida a un array de NumPy
+preds_numpy = raw_preds.numpy() 
+probs = preds_numpy[0] # Tomar el vector de probabilidades del lote (el único elemento)
+
+class_id = np.argmax(probs)
+confidence = float(np.max(probs))
     # Mostrar resultados
     st.subheader("Resultado:")
     st.write(f"**Clase predicha:** {CLASSES[class_id]}")
@@ -65,6 +69,7 @@ if uploaded_file is not None:
 
 #cd "C:\Users\Usuario\OneDrive\Desktop\Universidad\Noveno semestre\IA"
 #streamlit run pagweb.py
+
 
 
 
