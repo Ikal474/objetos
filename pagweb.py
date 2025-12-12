@@ -52,7 +52,7 @@ if uploaded_file is not None:
     input_img = preprocess(img)
 
     # Predicción
-raw_preds = model(input_img, training=False) 
+    raw_preds = model(input_img, training=False) 
 
 # Convertir el tensor de salida a un array de NumPy
 preds_numpy = raw_preds.numpy() 
@@ -69,6 +69,7 @@ st.write(f"**Confianza:** {confidence:.2f}")
 
 #cd "C:\Users\Usuario\OneDrive\Desktop\Universidad\Noveno semestre\IA"
 #streamlit run pagweb.py
+
 
 
 
