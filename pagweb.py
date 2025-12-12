@@ -45,14 +45,12 @@ if uploaded_file is not None:
         
     st.write(f"**Confianza:** `{confidence:.4f}`")
 
-    st.text("Probabilidades por Clase:")
-    for i, prob in enumerate(probs):
-        st.text(f"- {CLASSES[i]}: {prob:.4f}")
 
 
 
 #cd "C:\Users\Usuario\OneDrive\Desktop\Universidad\Noveno semestre\IA"
 #streamlit run pagweb.py
+
 
 
 
