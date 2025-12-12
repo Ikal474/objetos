@@ -36,7 +36,7 @@ if uploaded_file is not None:
     # 2. Procesar imagen
     input_img = preprocess(img)
     # Usamos model(input, training=False) para asegurar la predicción determinista.
-     raw_preds = model(input_img, training=False) 
+    raw_preds = model(input_img, training=False) 
     probs = raw_preds.numpy()[0] 
     class_id = np.argmax(probs)
     confidence = float(np.max(probs))        
@@ -53,6 +53,7 @@ if uploaded_file is not None:
 
 #cd "C:\Users\Usuario\OneDrive\Desktop\Universidad\Noveno semestre\IA"
 #streamlit run pagweb.py
+
 
 
 
