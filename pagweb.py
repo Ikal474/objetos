@@ -14,7 +14,7 @@ def load_model():
 model = load_model()
 
 CLASSES = ["Calculadora", "billetes", "llaves"] 
--
+
 def preprocess(img):
     
     if img.mode != "RGB":
@@ -53,6 +53,7 @@ uploaded_file = st.file_uploader("Elige una imagen", type=["jpg", "jpeg", "png"]
 
 #cd "C:\Users\Usuario\OneDrive\Desktop\Universidad\Noveno semestre\IA"
 #streamlit run pagweb.py
+
 
 
 
