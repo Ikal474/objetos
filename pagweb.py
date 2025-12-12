@@ -60,15 +60,16 @@ probs = preds_numpy[0] # Tomar el vector de probabilidades del lote (el único e
 
 class_id = np.argmax(probs)
 confidence = float(np.max(probs))
-    # Mostrar resultados
-    st.subheader("Resultado:")
-    st.write(f"**Clase predicha:** {CLASSES[class_id]}")
-    st.write(f"**Confianza:** {confidence:.2f}")
+# Mostrar resultados
+st.subheader("Resultado:")
+st.write(f"**Clase predicha:** {CLASSES[class_id]}")
+st.write(f"**Confianza:** {confidence:.2f}")
 
 
 
 #cd "C:\Users\Usuario\OneDrive\Desktop\Universidad\Noveno semestre\IA"
 #streamlit run pagweb.py
+
 
 
 
